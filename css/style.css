@@ -1,0 +1,178 @@
+body,ul{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0px auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+/* css for navigation element */
+.header{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow:0 1px 4px rgba(146,161,176,.15);
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+}
+.brand-name{
+    float: left;
+    font-size: 24px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 999;
+    height: 70px;
+    color: #0E2431;
+    line-height:70px;
+}
+.nav{
+    float: right;
+    display: block;
+}
+.header ul{
+    list-style: none;
+    margin: 0px;
+}
+.header ul li{
+    display: inline;
+    height: 70px;
+    line-height: 70px;
+    margin: 10px 20px;
+}
+.header ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    padding: 10px 0ex;
+    color: #0E2431;
+    border-bottom: 2px solid transparent;
+}
+.header ul li a:hover{
+    border-bottom: 2px solid #4070F4;
+    transition: .2s ease-in;
+}
+/* end navigation*/
+
+.main-banner{
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+}
+
+.main-banner p,.intro-name,.intro-name1{
+    font-size: 50px;
+    font-family: Poppins;
+    text-align: left;
+    
+    font-weight: 900;
+    word-spacing: 12px;
+    color:#0E2431 ;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.main-banner p span{
+    color: #4070F4;
+    font-family:Poppins;
+}
+
+.intro{
+    float: left;
+    margin: 100px 0;    
+}
+
+.social{
+    margin-top: 100px;
+}
+.social img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right:30px;
+    transition: all .3s ease-in;
+    border:3px solid transparent;
+    padding-bottom: 10px;
+}
+.social img:hover{
+    border-bottom:3px solid #4070F4;
+    transition: all .3s ease-in;
+}
+.me{
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-top: 100px;
+}
+/*end the  main intro section
+start the about main section
+*/
+.main-about{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.section-title{
+    font-size: 30px;
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    word-spacing: 12px;
+    color:#4070F4;
+    border-bottom: 2px solid #4070F4;    
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.about,.skill,.work{
+    margin: 50px 0;   
+}
+.col-left{
+    width: 50%;
+    float: left;
+}
+.col-right{
+    width:50%;
+    float: right;
+}
+.about img{
+    width: 300px;
+    height:500px;
+    border-radius: 15px;
+}
+.about p,.skill p,.headline{
+    text-align: left;
+    float: left;
+    opacity: 0.7;
+    visibility: visible;
+    width: auto;
+    font-size: 15px;
+}
+.intro-name{
+    float: left;
+    font-size: 30px;
+    margin-top: 150px;
+}
+/*Media Queries*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.nav{
+    display: none;
+}
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav{
+        display: block;
+    }
+}
